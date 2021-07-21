@@ -122,22 +122,6 @@ function handleButtonPress() {
   }, 1500);
 }
 
-function collide(body,sprite)
-{
-  if (body!=null)
-  {
-    var d = dist(body.postion.x, body.position.y, sprite.position.x, sprite.position.y);
-    if(d<=50)
-    {
-      World.remove(engine.world, stones);
-      stones = null;
-      return true;
-    }
-    else{
-      return false;
-    }
-  }
-}
 
 
 
